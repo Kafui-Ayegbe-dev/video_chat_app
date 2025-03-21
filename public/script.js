@@ -146,5 +146,13 @@ const promptLink = () => {
   document.getElementById("link-prompt").style.visibility = "hidden";
 }
 
+const getChatLink = () => {
+  const url = window.location.href; // Get the current page URL
+  navigator.clipboard.writeText(url) // Copy to clipboard
+    .then(() => alert("URL copied to clipboard!"))
+    .catch(err => console.error("Failed to copy: ", err));
+}
+
+
 // timer for link prompt
 const timerVar = setTimeout(promptLink, 8000);
