@@ -106,9 +106,19 @@ video {
 }
 
 .leave_meeting {
-    color: #EB534B;
+    color: #4beb9b;
 }
 
 .unmute, .stop {
     color: #CC3B33;
+}
+
+#link-prompt {
+    visibility: visible;
+    border-radius: 10%;
+    margin: auto;
+    width: 150px;
+    background-color: aliceblue;
+    padding: 10px;
+    border: 1px solid black;
 }

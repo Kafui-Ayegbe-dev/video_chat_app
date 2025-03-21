@@ -9,6 +9,8 @@ var peer = new Peer(undefined,{
   port: '443' // '3030' for local host
 });
 
+
+
 let myVideoStream;
 navigator.mediaDevices.getUserMedia({
   video: true,
@@ -138,3 +140,11 @@ const setPlayVideo = () => {
   `
   document.querySelector('.main__video_button').innerHTML = html;
 }
+
+// display small prompt about link
+const promptLink = () => {
+  document.getElementById("link-prompt").style.visibility = "hidden";
+}
+
+// timer for link prompt
+const timerVar = setTimeout(promptLink, 8000);
